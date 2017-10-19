@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.TextEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="TextEditor" Height="300" Width="300">
+    <Grid>
+        <Menu x:Name="menuButton" HorizontalAlignment="Left" Height="22" Margin="10,10,0,0" VerticalAlignment="Top" Width="272">
+            <MenuItem x:Name="menuItemEdit" FontSize="14" Header="Edit">
+                <MenuItem x:Name="menuItemCopy" FontSize="14" Header="Copy" Click="MenuItemCopy_Click"/>
+                <MenuItem x:Name="menuItemPaste" FontSize="14" Header="Paste" Click="MenuItemPaste_Click"/>
+                <MenuItem x:Name="menuItemCut" FontSize="14" Header="Cut" Click="MenuItemCut_Click"/>
+                <MenuItem x:Name="menuItemDelete" FontSize="14" Header="Delete" Click="MenuItemDelete_Click" />
+                <MenuItem x:Name="menuItemSelectAll" FontSize="14" Header="SelectAll" Click="MenuItemSelectAll_Click" />
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="textBoxEdit" HorizontalAlignment="Left" Height="209" Margin="10,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272" FontSize="20"/>
+
+    </Grid>
+</Window>
